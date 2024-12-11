@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{text-align: center; box-sizing: border-box; }
+        img{vertical-align: middle;}
+        .container{position: relative;}
+        mySlides{display: none;}
+        .prev,.next{
+   position:absolute;
+top:40%;
+width:auto;
+padding:16px;
+margin-top:-50px;
+color:white;
+font-weight:bold;
+font-size:20px;
+border-radius:0 3px 3px 0;
+user-select:none;
+-webkit-user-select:none;
+  }
+  .next{right:0; border-radius: 3px 0 0 3px;}
+  .numbertext{
+    position: absolute; top: 0; padding: 8px 12px; font-size: 12px;
+  }
+  .caption-container{text-align: center; color: white; pading: 2px 16px; background-color: black; }
+    .row:after{content:""; display: flex; clear: both;}
+    .column{float: left; width: 16.66%;}
+    .demo{opacity: 0.6}
+    .active,.demo:hover{opacity: 1;}
+    button{padding: 10px 20px; background-color: lightblue;}
+
+
+    </style>
+</head>
+<body style="background-color: grey;">
+<h1> DEV TOURS AND TRAVELS1 </h1>
+<hr> 
+<h2> ABOUT US </h2>
+
+<p> Our mission is to be the leading and most trustworthy travel management company that sets the standars for professionalism,reliability and transparency to its customers. </p>
+<div class="container">
+<div class="mySlides">
+<div class="numbertext">
+1/6
+</div>
+<img src="https://th.bing.com/th/id/R.21a3d5593cbeec0ddc49aa05cbe08bd4?rik=oIyP4wcbIrsPkg&pid=ImgRaw&r=0" width="100%" alt="slide 1">
+</div>
+
+ <div class="mySlides">
+<div class="numbertext">
+2/6
+</div>
+<img src="https://www.tripsavvy.com/thmb/4wJONYsP05iMiE3avHzMlkuEcGE=/5120x3413/filters:fill(auto,1)/GettyImages-450784769-58f7b8cd3df78ca1597ccf9c.jpg" width="100%" alt="slide 2">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">
+3/6
+</div>
+<img src="https://th.bing.com/th/id/OIP.g510iDTf1zf96kghrV880QHaEh?rs=1&pid=ImgDetMain" width="100%" alt="slide 3">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">
+4/6
+</div>
+<img src="https://th.bing.com/th/id/R.0cf23de8d45b63d2950e3e3dcbb27771?rik=swRSQ8q0m3goOQ&pid=ImgRaw&r=0" width="100%" alt="slide 4">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">
+5/6
+</div>
+<img src="https://th.bing.com/th/id/R.a07c07792a5d092f692d0e11f54e1907?rik=crATcoBhU2g5wQ&riu=http%3a%2f%2fwww.indiachal.com%2fwp-content%2fuploads%2f2018%2f08%2fUttarakhand.jpg&ehk=LJh%2f8a8mPDYYIUzeafdsDrizMT3f1700eJ7EfTxJCUg%3d&risl=&pid=ImgRaw&r=0" width="100%" alt="slide 5">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">
+6/6
+</div>
+<img src="https://th.bing.com/th/id/R.18614a827c068adc344a1f46949e90c1?rik=4B4JHbRVy6kdWQ&pid=ImgRaw&r=0" width="100%" alt="slide 6">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)"> &#10094;</a>
+<a class="next" onclick="plusSlides(1)"> &#10095;</a>
+
+<div class="caption-container">
+<p id="caption"> </p>
+</div>
+
+<div class="row">
+<div class="column">
+    <img src="https://th.bing.com/th/id/R.21a3d5593cbeec0ddc49aa05cbe08bd4?rik=oIyP4wcbIrsPkg&pid=ImgRaw&r=0" class="demo cursor" width="100%" height="250px" onclick="currentSlide(1)" alt="place1"> 
+</div>
+
+<div class="column">
+    <img src="https://www.tripsavvy.com/thmb/4wJONYsP05iMiE3avHzMlkuEcGE=/5120x3413/filters:fill(auto,1)/GettyImages-450784769-58f7b8cd3df78ca1597ccf9c.jpg"class="demo cursor" width="100%" height="250px" onclick="currentSlide(2)" alt="place2"> 
+</div>
+
+<div class="column">
+    <img src="https://th.bing.com/th/id/OIP.g510iDTf1zf96kghrV880QHaEh?rs=1&pid=ImgDetMain" width="100%" height="250px" onclick="currentSlide(3)" alt="place3" class="demo cursor"> 
+</div>
+
+<div class="column">
+    <img src="https://th.bing.com/th/id/R.0cf23de8d45b63d2950e3e3dcbb27771?rik=swRSQ8q0m3goOQ&pid=ImgRaw&r=0" width="100%" height="250px" onclick="currentSlide(4)" alt="place4" class="demo cursor">
+</div>
+
+<div class="column">
+    <img src="https://th.bing.com/th/id/R.a07c07792a5d092f692d0e11f54e1907?rik=crATcoBhU2g5wQ&riu=http%3a%2f%2fwww.indiachal.com%2fwp-content%2fuploads%2f2018%2f08%2fUttarakhand.jpg&ehk=LJh%2f8a8mPDYYIUzeafdsDrizMT3f1700eJ7EfTxJCUg%3d&risl=&pid=ImgRaw&r=0" width="100%" height="250px" onclick="currentSlide(5)" alt="place5" class="demo cursor"> 
+</div>
+
+<div class="column">
+    <img src="https://th.bing.com/th/id/R.18614a827c068adc344a1f46949e90c1?rik=4B4JHbRVy6kdWQ&pid=ImgRaw&r=0" width="100%" height="250px" onclick="currentSlide(6)" alt="place6" class="demo cursor"> 
+</div>
+</div>
+</div>
+<script>
+var slideIndex=1;
+showSlides(slideIndex);
+function plusSlides(n){
+showSlides(slideIndex+=n);
+}
+function currentSlide(n){
+   showSlides(slideIndex=n);
+}
+function showSlides(n){
+    var i;
+    var slides=document.getElementsByClassName("mySlides");
+    var dots=document.getElementsByClassName("demo");
+    var captionText=document.getElementById("caption");
+    if(n>slides.length){
+        slideIndex=1;
+    }
+    if(n<1){
+        slideIndex=slides.length
+    }
+    for(i=0;i<slides.length;i++){
+        slides[i].style.display="none";
+    }
+    for(i=0;i<dots.length;i++){
+        dots[i].className=dots[i].className.replace("active","");
+    }
+    slides[slideIndex-1].style.display="block";
+    dots[slideIndex-1].className+="active";
+    captionText.innerHTML=dots[slideIndex-1].alt;
+}
+</script>
+<button> next </button>
+</body>
+</html>
